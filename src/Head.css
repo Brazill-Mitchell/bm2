@@ -1,0 +1,14 @@
+#head-container{
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    justify-content: space-around;
+    margin: 0 10vw 0 10vw;
+    align-items: center;
+}
+.head-item-box{
+
+}
+.head-item{
+
+}
