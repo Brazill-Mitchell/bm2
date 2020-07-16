@@ -5,15 +5,7 @@ function Head(){
 
     return(
         <div id='head-container'>
-            <div className='head-item-box'>
-                <div className='head-item'>item 1</div>
-            </div>
-            <div className='head-item-box'>
-                <div className='head-item'>item 1</div>
-            </div>
-            <div className='head-item-box'>
-                <div className='head-item'>item 1</div>
-            </div>
+            <div>Head</div>
         </div>
     )
 }
