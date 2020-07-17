@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  color: white;
+  font-weight: 500;
+  background-color: rgb(44, 44, 44);
 }
 
 .App-logo {
@@ -24,15 +27,38 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#loading-container{
+  
+}
+#loading-img{
+  background-color: salmon;
+  width: 30px;
+  height: 30px;
+  clip-path: circle();
+  animation: loadingImg 3s infinite;
+  -webkit-animation: loadingImg 3s infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes loadingImg{
+  0%{
+    clip-path: circle();
   }
-  to {
-    transform: rotate(360deg);
+  25%{
+    width: 0;
+    height: 0;
+  }
+  50%{
+    width: 30px;
+    height: 30px;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  }
+  75%{
+    width: 0;
+    height: 0;
+  }
+  100%{
+    width: 30px;
+    height: 30px;
+    clip-path: circle();
   }
 }

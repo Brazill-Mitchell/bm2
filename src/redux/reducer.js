@@ -7,7 +7,7 @@ export const XL = 'XL'
 // const test = require('./actions.js')
 
 const initialState = {
-    resolution: COMPUTER
+    resolution: MOBILE
 }
 
 export default (state= initialState, act) => {

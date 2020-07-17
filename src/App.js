@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import SideMenu from './SideMenu.js'
@@ -33,8 +33,15 @@ function checkScreenSize(){
   }
 }
 
+useEffect(()=>{
+  checkScreenSize()
+},[])
+
   return (
     <div className="App">
+      <div id='loading-container'>
+          {/* <div id='loading-img'></div> */}
+      </div>
       {/* <SideMenu/> */}
       <Menu/>
       <Head/>

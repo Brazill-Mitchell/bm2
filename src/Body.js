@@ -17,6 +17,10 @@ function Body(props){
                     <div className='project-details-container'>
                         <div className='project-title'>Project Title</div>
                         <div className='project-description'>Sample Description</div>
+                        <div className='project-description-buttons'>
+                            <button className='description-button'>Github</button>
+                            <button className='description-button'>LinkedIn</button>
+                        </div>
                         <div className='project-preview-images'>
                             <image className='preview-image' src='' alt=''></image>
                         </div>
