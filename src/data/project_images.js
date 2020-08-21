@@ -1,25 +1,25 @@
-import geckoMain from "./images/projectImages/geckoMain"
-import geckoLanding from "./images/projectImages/geckoLanding"
-import geckoResponsive from "./images/projectImages/geckoResponsive"
-import signIn from "./images/projectImages/signIn"
-import webPost from "./images/projectImages/webPost"
+import geckoMain from "../images/projectImages/gecko/geckoMain.jpg"
+import geckoLanding from "../images/projectImages/gecko/geckoLanding.jpg"
+import geckoResponsive from "../images/projectImages/gecko/geckoResponsive.jpg"
+import signIn from "../images/projectImages/gecko/signIn.jpg"
+import webPost from "../images/projectImages/gecko/webPost.jpg"
 
-import atomistLanding from "./images/projectImages/atomistLanding"
-import atomistLandingResponsive from "./images/projectImages/atomistLandingResponsive"
-import pricing from "./images/projectImages/pricing"
-import pricingResponsive from "./images/projectImages/pricingResponsive"
+import atomistLanding from "../images/projectImages/atomist/atomistLanding.jpg"
+import atomistLandingResponsive from "../images/projectImages/atomist/atomistLandingResponsive.jpg"
+import pricing from "../images/projectImages/atomist/pricing.jpg"
+import pricingResponsive from "../images/projectImages/atomist/pricingResponsive.jpg"
 
-import full8 from "./images/projectImages/full8"
-import full14 from "./images/projectImages/full14"
-import full20 from "./images/projectImages/full20"
-import fullEmpty20 from "./images/projectImages/fullEmpty20"
+import full8 from "../images/projectImages/connectX/full8.jpg"
+import full14 from "../images/projectImages/connectX/full14.jpg"
+import full20 from "../images/projectImages/connectX/full20.jpg"
+import fullEmpty20 from "../images/projectImages/connectX/fullEmpty20.jpg"
 
-import full from "./images/projectImages/full"
-import analysis from "./images/projectImages/analysis"
-import fullEmpty from "./images/projectImages/fullEmpty"
-import paintStyle from "./images/projectImages/paintStyle"
+import full from "../images/projectImages/paint/full.jpg"
+import analysis from "../images/projectImages/paint/analysis.jpg"
+import fullEmpty from "../images/projectImages/paint/fullEmpty.jpg"
+import paintStyle from "../images/projectImages/paint/paintStyle.jpg"
 
-import { projectNames } from "./projects"
+import { projectNames } from "./constants"
 
 
 export const projectMainImages = {
@@ -85,5 +85,5 @@ export const projectPreviewImages = {
         {
             image: paintStyle,
             summary: ""
-        }],
+        }]
 }

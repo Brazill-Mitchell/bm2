@@ -1,0 +1,10 @@
+
+.nav-item-container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item{
+    position: relative;
+}

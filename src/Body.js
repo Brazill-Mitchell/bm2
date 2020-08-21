@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { setScreenResolution } from './redux/actions'
+import { setScreenSize } from './redux/actions'
 import './Body.css'
 
 function Body(props){
@@ -8,7 +8,7 @@ function Body(props){
 
     return(
         <div id='body-container'>
-            <div>{props.resolution}</div>
+            <div>{props.screenSize}</div>
             <div className='body-section'>
                 <div className='project-container'>
                     <div className='project-image-main'>
@@ -32,9 +32,9 @@ function Body(props){
 }
 
 const mapStateToProps = state => ({
-    resolution: state.resolution
+    screenSize: state.screenSize
 })
 
-const mapDispatchToProps = { setScreenResolution }
+const mapDispatchToProps = { setScreenSize }
 
 export default connect(mapStateToProps,mapDispatchToProps)(Body)

@@ -1,31 +1,28 @@
 import * as actions from './actions.js'
-import { projectNames } from "../data/projects"
+import { projectNames } from "../data/constants"
+import { screenSizes } from "../data/constants"
 
-export const MOBILE = 'MOBILE'
-export const TABLET = 'TABLET'
-export const COMPUTER = 'COMPUTER'
-export const XL = 'XL'
 
 const initialState = {
-    resolution: MOBILE,
+    screensize: screenSizes.MOBILE,
     currentProject: projectNames.PHLASK
 }
 
 export default (state= initialState, act) => {
     switch (act.type) {
         
-        case actions.SET_SCREEN_RESOLUTION:
-            if(act.resolution === MOBILE){
-                return {...state, resolution: MOBILE}
+        case actions.SET_SCREEN_SIZE:
+            if(act.screenSize === screenSizes.MOBILE){
+                return {...state, screenSize: screenSizes.MOBILE}
             }
-            if(act.resolution === TABLET){
-                return {...state, resolution: TABLET}
+            if(act.screenSize === screenSizes.TABLET){
+                return {...state, screenSize: screenSizes.TABLET}
             }
-            if(act.resolution === XL){
-                return {...state, resolution: XL}
+            if(act.screenSize === screenSizes.XL){
+                return {...state, screenSize: screenSizes.XL}
             }
             else{
-                return {...state, resolution: COMPUTER}
+                return {...state, screenSize: screenSizes.COMPUTER}
             }
 
         case actions.SET_CURRENT_PROJECT:

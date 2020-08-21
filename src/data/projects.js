@@ -1,18 +1,10 @@
+import { projectNames } from "./constants"
 import { projectMainImages, projectPreviewImages } from "./project_images"
-
-export const projectNames = {
-    NW: "NW",
-    PHLASK: "PLASK",
-    GECKO_NOTES: "GECKO_NOTES",
-    ATOMIST: "ATOMIST",
-    CONNECT_X: "CONNECT_X",
-    PAINT: "PAINT"
-}
 
 export const projectData = {
     NW: {
         title: "NW",
-        summary: ,
+        // summary: ,
         links: {
             github: "https://github.com/Brazill-Mitchell/nw",
             projectUrl: "https://brazill-mitchell.github.io/nw/"
@@ -22,7 +14,7 @@ export const projectData = {
     },
     PHLASK: {
         title: "PHLASK",
-        summary: ,
+        // summary: ,
         links:
             {
                github: "https://github.com/phlask/phlask-map",
@@ -33,7 +25,7 @@ export const projectData = {
     },
     GECKO_NOTES: {
         title: "Gecko Notes",
-        summary: "Gecko Notes is a web based, mobile friendly note keeping app. It's simple interface makes it easy to store thoughts and ideas, and come back to them anytime, anywhere.",
+        // summary: "Gecko Notes is a web based, mobile friendly note keeping app. It's simple interface makes it easy to store thoughts and ideas, and come back to them anytime, anywhere.",
         links:
             {
                github: "https://github.com/chingu-voyages/v9-geckos-team-06",
@@ -44,7 +36,7 @@ export const projectData = {
     },
     ATOMIST: {
         title: "Atomist",
-        summary: "",
+        // summary: "",
         links:
             {
                github: "https://github.com/chingu-voyages/v8-toucans-team-04",
@@ -55,7 +47,7 @@ export const projectData = {
     },
     CONNECT_X: {
         title: "Connect X",
-        summary: ,
+        // summary: ,
         links:
             {
                github: "https://github.com/Brazill-Mitchell/chingu",
@@ -66,7 +58,7 @@ export const projectData = {
     },
     PAINT: {
         title: "Paint ",
-        summary: ,
+        // summary: ,
         links:
             {
                github: "https://brazill-mitchell.github.io/paint-app/",
