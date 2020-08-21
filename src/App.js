@@ -9,6 +9,7 @@ import Body from './Body.js'
 import { connect } from 'react-redux'
 import { setScreenResolution } from './redux/actions'
 import { MOBILE, TABLET, COMPUTER, XL } from './redux/reducer'
+import Nav from "./bm"
 
 function App(props) {
 
@@ -38,15 +39,16 @@ useEffect(()=>{
 },[])
 
   return (
-    <div className="App">
-      <div id='loading-container'>
+    <div className="">
+      <Nav/>
+      {/* <div id='loading-container' className="bg-success"> */}
           {/* <div id='loading-img'></div> */}
-      </div>
+      {/* </div> */}
       {/* <SideMenu/> */}
-      <Menu/>
+      {/* <Menu/>
       <Head/>
-      <Body/>
-      <Footer/>
+      <Body/> */}
+      {/* <Footer/> */}
       
     </div>
   );
