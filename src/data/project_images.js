@@ -37,15 +37,15 @@ export const projectPreviewImages = {
         },
         {
             image: geckoResponsive,
-            summary: ""
+            summary: "The web app can adjust to any screen size."
         },
         {
             image: signIn,
-            summary: ""
+            summary: "Sign in using an existing Gmail account."
         },
         {
             image: webPost,
-            summary: ""
+            summary: "Display app description and thumbnail in search results and link sharing."
         }
     ],
     [projectNames.ATOMIST]: [
