@@ -1,7 +1,7 @@
 
 export const projectNames = {
-    NW: "NW",
-    PHLASK: "PLASK",
+    // NW: "NW",
+    // PHLASK: "PLASK",
     GECKO_NOTES: "GECKO_NOTES",
     ATOMIST: "ATOMIST",
     CONNECT_X: "CONNECT_X",
