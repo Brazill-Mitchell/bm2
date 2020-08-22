@@ -12,6 +12,8 @@ import { setScreenSize } from './redux/actions'
 import { screenSizes, mediaList } from './data/constants'
 import Nav from "./components/Nav.js"
 import Projects from "./components/Projects"
+import About from "./components/About"
+
 
 function App(props) {
   const refNav = useRef(null)
@@ -48,10 +50,11 @@ useEffect(()=>{
 },[])
 
   return (
-    <div className="">
+    <div className="App">
       
       <Nav refList={refList}/>
       <Projects refList= {refList}/>
+      <About refList={refList} />
       {/* <div id='loading-container' className="bg-success"> */}
           {/* <div id='loading-img'></div> */}
       {/* </div> */}

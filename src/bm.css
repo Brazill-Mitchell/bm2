@@ -1,3 +1,10 @@
+:root{
+    --image-shadow: rgba(6, 31, 85, 0.8)
+}
+
+p{
+    font-weight: 600;
+}
 .img{
     width: 100%;
     height: 100%;
@@ -7,6 +14,29 @@
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+    transition: .1s all ease-in-out;
+    -webkit-transition: .1s all ease-in-out;
+    -moz-transition: .1s all ease-in-out;
+    -ms-transition: .1s all ease-in-out;
+    -o-transition: .1s all ease-in-out;
+}
+.text-elevation{
+    text-shadow: 2px 2px 3px var(--image-shadow);
+}
+.text-elevation:hover{
+    text-shadow: 4px 4px 7px var(--image-shadow);
+}
+.img-elevation{
+    box-shadow: 2px 2px 5px var(--image-shadow);
+}
+.img-elevation:hover{
+    box-shadow: 4px 4px 7px var(--image-shadow);
+}
+.button-elevation{
+    /* box-shadow: 1px 1px 3px var(--image-shadow); */
+}
+.button-elevation:hover{
+    /* box-shadow: 4px 4px 7px var(--image-shadow); */
 }
 
 /* Nav */
@@ -14,6 +44,8 @@
     position: relative;
     display: flex;
     justify-content: space-around;
+    padding: 0 25%;
+    background-image: linear-gradient(90deg, #0157c770 0%, #00367c7e 100%);
 }
 
 .nav-item{
@@ -27,7 +59,7 @@
     -o-transition: .1s all ease-in-out;
 }
 .nav-item:hover{
-    color: blue;
+    color: white;
 }
 .nav-item:after{
     position: absolute;
@@ -40,7 +72,7 @@
     -moz-transition: .2s all ease-in-out;
     -ms-transition: .2s all ease-in-out;
     -o-transition: .2s all ease-in-out;
-    border-bottom: 2px solid rgba(0,0,0,1);
+    border-bottom: 2px solid white;
     animation-name: nav-line;
     animation-duration: .2s;
     animation-timing-function: ease-in-out;
@@ -100,8 +132,10 @@
     height: fit-content;
 }
 .project-link-style{
+    color: var(--color-tertiary);
+    font-weight: 700;
     text-decoration: none;
-    border: 1.5px solid rgba(0,0,0,0);
+    border: 2px solid rgba(107, 161, 185, 0);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -115,8 +149,14 @@
     -o-transition: .1s all ease-in-out;
 }
 .project-link-style:hover{
-    border: 1.5px solid rgba(0,0,0,1);
+    color: white;
+    /* border: 2px solid rgb(108, 176, 207); */
     text-decoration: none;
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
 }
 
 /* preview images*/

@@ -1,8 +1,26 @@
+:root{
+  /* --color-primary: rgb(205, 233, 255);
+  --color-secondary: rgb(36,108,146);
+  --color-tertiary: rgb(0,33,52);
+  --color-primary-harmony: rgb(205, 233, 255);
+  --color-secondary-harmony: rgb(146, 73, 36);
+  --color-tertiary-harmony: rgb(0,33,52); */
+  /* --color-primary: rgb(20, 28, 182); */
+  --color-primary: rgb(0,33,52);
+  --color-secondary: rgb(36,108,146);
+  --color-tertiary: rgb(205, 233, 255);
+  --color-primary-harmony: rgb(205, 233, 255);
+  --color-secondary-harmony: rgb(146, 73, 36);
+  --color-tertiary-harmony: rgb(0,33,52);
+
+}
+
 .App {
   text-align: center;
   color: white;
   font-weight: 500;
-  background-color: rgb(44, 44, 44);
+  /* background-color: var(--color-primary); */
+  background-image: radial-gradient(circle, var(--color-primary) 0%, rgb(0, 155, 245) 100%);
 }
 
 .App-logo {
