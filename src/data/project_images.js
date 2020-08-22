@@ -23,10 +23,12 @@ import { projectNames } from "./constants"
 
 
 export const projectMainImages = {
-    gecko: geckoMain,
-    atomist: atomistLanding,
-    connectX: full8,
-    paint: full,
+    // [projectNames.PHLASK]: phlaskMain,
+    // [projectNames.NW]: nwMain,
+    [projectNames.GECKO_NOTES]: geckoMain,
+    [projectNames.ATOMIST]: atomistLanding,
+    [projectNames.CONNECT_X]: full8,
+    [projectNames.PAINT]: full,
 }
 
 export const projectPreviewImages = {

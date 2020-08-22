@@ -25,18 +25,18 @@ export const projectData = {
     },
     GECKO_NOTES: {
         title: "Gecko Notes",
-        // summary: "Gecko Notes is a web based, mobile friendly note keeping app. It's simple interface makes it easy to store thoughts and ideas, and come back to them anytime, anywhere.",
+        summary: "Gecko Notes is a web based, mobile friendly note keeping app. It's simple interface makes it easy to store thoughts and ideas, and come back to them anytime, anywhere.",
         links:
             {
                github: "https://github.com/chingu-voyages/v9-geckos-team-06",
                projectUrl: "https://geckonotes.firebaseapp.com"
             } ,
-        mainImage: projectMainImages[projectNames.NW],
-        previewImages: projectPreviewImages[projectNames.NW]
+        mainImage: projectMainImages[projectNames.GECKO_NOTES],
+        previewImages: projectPreviewImages[projectNames.GECKO_NOTES]
     },
     ATOMIST: {
         title: "Atomist",
-        // summary: "",
+        summary: "This Cloned website was a Developer Team project as a part of Chingu, a community of growing developers.",
         links:
             {
                github: "https://github.com/chingu-voyages/v8-toucans-team-04",
@@ -47,7 +47,7 @@ export const projectData = {
     },
     CONNECT_X: {
         title: "Connect X",
-        // summary: ,
+        summary: "This 2 player game is similar to Connect 4, except the players aren’t limited to 4. Any number of squares can be chosen as the winning amount, and the board can be set to any number of squares, making for a challenging and maybe impossible game of Connect X.",
         links:
             {
                github: "https://github.com/Brazill-Mitchell/chingu",
@@ -58,7 +58,7 @@ export const projectData = {
     },
     PAINT: {
         title: "Paint ",
-        // summary: ,
+        summary: "This project is a simple paint application, created using the Canvas element. The user is able to choose the paint color, shape, and stroke size. They can even see an analysis of how the mouse’s position in the window relates to the canvas for an understanding of how the canvas functions.",
         links:
             {
                github: "https://brazill-mitchell.github.io/paint-app/",
@@ -68,3 +68,5 @@ export const projectData = {
         previewImages: projectPreviewImages[projectNames.PAINT]
     }
 }
+
+export default projectData

@@ -5,7 +5,7 @@ import { screenSizes } from "../data/constants"
 
 const initialState = {
     screensize: screenSizes.MOBILE,
-    currentProject: projectNames.PHLASK
+    currentProject: projectNames.ATOMIST
 }
 
 export default (state= initialState, act) => {
