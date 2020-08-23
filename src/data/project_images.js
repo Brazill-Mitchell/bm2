@@ -33,59 +33,77 @@ export const projectMainImages = {
 
 export const projectPreviewImages = {
     [projectNames.GECKO_NOTES]: [
+        // {
+        //     image: geckoMain,
+        //     description: "main"
+        // },
         {
             image: geckoLanding,
-            summary: ""
+            description: "landing"
         },
         {
             image: geckoResponsive,
-            summary: "The web app can adjust to any screen size."
+            description: "The web app can adjust to any screen size."
         },
         {
             image: signIn,
-            summary: "Sign in using an existing Gmail account."
+            description: "Sign in using an existing Gmail account."
         },
         {
             image: webPost,
-            summary: "Display app description and thumbnail in search results and link sharing."
+            description: "Display app description and thumbnail in search results and link sharing."
         }
     ],
     [projectNames.ATOMIST]: [
+        // {
+        //     image: atomistLanding,
+        //     description: "landing"
+        // },
         {
             image: atomistLandingResponsive,
-            summary: ""
+            description: "landing responsive"
         },
         {
             image: pricing,
-            summary: ""
+            description: "pricing"
         },
         {
             image: pricingResponsive,
-            summary: ""
+            description: "pricing responsive"
         }
     ],
-    [projectNames.CONNECT_X]: [{
+    [projectNames.CONNECT_X]: [
+        // {
+        //     image: full8,
+        //     description: "full 8"
+        // },
+        {
             image: full14,
-            summary: ""
+            description: "full 4"
         },
         {
             image: full20,
-            summary: ""
+            description: ""
         },
         {
             image: fullEmpty20,
-            summary: ""
+            description: ""
         }],
-    [projectNames.PAINT]: [{
+    [projectNames.PAINT]: [
+        // {
+        //     image: full,
+        //     description: "full"
+        // },
+        {
             image: analysis,
-            summary: ""
+            description: ""
         },
         {
             image: fullEmpty,
-            summary: ""
+            description: ""
         },
         {
             image: paintStyle,
-            summary: ""
+            description: ""
         }]
 }

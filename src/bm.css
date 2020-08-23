@@ -104,9 +104,15 @@ p{
     width: 100%;
 }
 
-.project-main-image{
+.project-main-image-container{
     position: relative;
     flex: 0 50%;
+}
+.project-main-image{
+
+}
+.project-main-image-desc{
+
 }
 .project-text-area{
     
@@ -132,7 +138,7 @@ p{
     height: fit-content;
 }
 .project-link-style{
-    color: var(--color-tertiary);
+    color: var(--color-tertiary-harmony);
     font-weight: 700;
     text-decoration: none;
     border: 2px solid rgba(107, 161, 185, 0);
@@ -149,7 +155,7 @@ p{
     -o-transition: .1s all ease-in-out;
 }
 .project-link-style:hover{
-    color: white;
+    color: var(--color-tertiary-harmony-active);
     /* border: 2px solid rgb(108, 176, 207); */
     text-decoration: none;
     transform: scale(1.02);

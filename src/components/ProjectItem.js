@@ -6,25 +6,44 @@ import { projectNames } from "../data/constants"
 
 function ProjectItem(props){
     
+    const project = projectData[props.projectTitle]
     const [displayImage,setDisplayImage] = useState()
+    
+    function handleFocus(image){
+        if(image !== undefined){
+            setDisplayImage(image)
+        }else if (displayImage !== project.mainImage){
+            setDisplayImage({image: project.mainImage})
+        }
+    }
 
     return(
-        <div className="mt-5">
+        <div className="mt-5" onClick={()=>{handleFocus()}}>
                     
                 <Slide right>
                     
                     <div className="project-container container d-flex p-2">
 
                         {/* Main Image */}
-                        <div className="project-main-image container">
-                            <img 
-                                className="img"
-                                alt=""
-                                src={displayImage !== undefined
-                                    ? displayImage
-                                    : projectData[props.projectTitle].mainImage    
-                                } 
-                            ></img>
+                        <div className="project-main-image-container container">
+                            {/* image */}
+                            <div className='project-main-image'>
+                                <img 
+                                    className="img"
+                                    alt=""
+                                    src={displayImage !== undefined
+                                        ? displayImage.image
+                                        : projectData[props.projectTitle].mainImage    
+                                    } 
+                                ></img>
+                            </div>
+
+                            {/* desc */}
+                            <div className="project-main-image-desc mx-1" >{displayImage !== undefined
+                                    ? displayImage.description
+                                    : ""
+                                }
+                            </div>
                         </div>
         
                         {/* Description */}
@@ -52,7 +71,7 @@ function ProjectItem(props){
                                 {projectData[props.projectTitle] !== undefined 
                                     ? <div className="d-flex preview-image-container">
                                         {projectData[props.projectTitle].previewImages.map((image,index) => {
-                                            return <div className="preview-image" onClick={()=>{setDisplayImage(image.image)}}>
+                                            return <div className="preview-image" onClick={(e)=>{e.stopPropagation();handleFocus(image)}}>
                                                     <img className='img img-elevation' key={index} src={image.image} alt=""></img>
                                                 </div>
                                         })}

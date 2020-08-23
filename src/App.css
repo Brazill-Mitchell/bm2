@@ -11,8 +11,8 @@
   --color-tertiary: rgb(205, 233, 255);
   --color-primary-harmony: rgb(205, 233, 255);
   --color-secondary-harmony: rgb(146, 73, 36);
-  --color-tertiary-harmony: rgb(0,33,52);
-
+  --color-tertiary-harmony: rgb(233, 190, 0);
+  --color-tertiary-harmony-active: rgb(255, 253, 117);
 }
 
 .App {
