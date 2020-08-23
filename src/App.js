@@ -13,6 +13,7 @@ import { screenSizes, mediaList } from './data/constants'
 import Nav from "./components/Nav.js"
 import Projects from "./components/Projects"
 import About from "./components/About"
+import Contact from "./components/Contact"
 
 
 function App(props) {
@@ -55,6 +56,7 @@ useEffect(()=>{
       <Nav refList={refList}/>
       <Projects refList= {refList}/>
       <About refList={refList} />
+      <Contact refList={refList}/>
       {/* <div id='loading-container' className="bg-success"> */}
           {/* <div id='loading-img'></div> */}
       {/* </div> */}
