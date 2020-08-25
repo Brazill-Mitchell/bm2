@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/bm2/static/css/main.47b80a1a.chunk.css",
-    "main.js": "/bm2/static/js/main.21d0973a.chunk.js",
-    "main.js.map": "/bm2/static/js/main.21d0973a.chunk.js.map",
+    "main.css": "/bm2/static/css/main.49ac01c4.chunk.css",
+    "main.js": "/bm2/static/js/main.36ec1111.chunk.js",
+    "main.js.map": "/bm2/static/js/main.36ec1111.chunk.js.map",
     "runtime-main.js": "/bm2/static/js/runtime-main.e15f9c1b.js",
     "runtime-main.js.map": "/bm2/static/js/runtime-main.e15f9c1b.js.map",
     "static/css/2.11829350.chunk.css": "/bm2/static/css/2.11829350.chunk.css",
-    "static/js/2.5d747e2b.chunk.js": "/bm2/static/js/2.5d747e2b.chunk.js",
-    "static/js/2.5d747e2b.chunk.js.map": "/bm2/static/js/2.5d747e2b.chunk.js.map",
+    "static/js/2.d5e37aae.chunk.js": "/bm2/static/js/2.d5e37aae.chunk.js",
+    "static/js/2.d5e37aae.chunk.js.map": "/bm2/static/js/2.d5e37aae.chunk.js.map",
     "index.html": "/bm2/index.html",
-    "precache-manifest.a2b4f45a972740fbdc09e4cca31af3e0.js": "/bm2/precache-manifest.a2b4f45a972740fbdc09e4cca31af3e0.js",
+    "precache-manifest.9517190734d41ecca5e8c90cdb6d9483.js": "/bm2/precache-manifest.9517190734d41ecca5e8c90cdb6d9483.js",
     "service-worker.js": "/bm2/service-worker.js",
     "static/css/2.11829350.chunk.css.map": "/bm2/static/css/2.11829350.chunk.css.map",
-    "static/css/main.47b80a1a.chunk.css.map": "/bm2/static/css/main.47b80a1a.chunk.css.map",
-    "static/js/2.5d747e2b.chunk.js.LICENSE.txt": "/bm2/static/js/2.5d747e2b.chunk.js.LICENSE.txt",
+    "static/css/main.49ac01c4.chunk.css.map": "/bm2/static/css/main.49ac01c4.chunk.css.map",
+    "static/js/2.d5e37aae.chunk.js.LICENSE.txt": "/bm2/static/js/2.d5e37aae.chunk.js.LICENSE.txt",
     "static/media/analysis.jpg": "/bm2/static/media/analysis.4cf3b444.jpg",
     "static/media/atomistLanding.jpg": "/bm2/static/media/atomistLanding.1adaf4e8.jpg",
     "static/media/atomistLandingResponsive.jpg": "/bm2/static/media/atomistLandingResponsive.bb068191.jpg",
@@ -26,7 +26,7 @@
     "static/media/geckoLanding.jpg": "/bm2/static/media/geckoLanding.bd6c8edb.jpg",
     "static/media/geckoMain.jpg": "/bm2/static/media/geckoMain.990a4c21.jpg",
     "static/media/geckoResponsive.jpg": "/bm2/static/media/geckoResponsive.10b747d4.jpg",
-    "static/media/gmail.png": "/bm2/static/media/gmail.e4668263.png",
+    "static/media/gmail.png": "/bm2/static/media/gmail.8fe68a3d.png",
     "static/media/logo.svg": "/bm2/static/media/logo.5d5d9eef.svg",
     "static/media/paintStyle.jpg": "/bm2/static/media/paintStyle.bcc877fc.jpg",
     "static/media/pricing.jpg": "/bm2/static/media/pricing.d7a02dbb.jpg",
@@ -37,8 +37,8 @@
   "entrypoints": [
     "static/js/runtime-main.e15f9c1b.js",
     "static/css/2.11829350.chunk.css",
-    "static/js/2.5d747e2b.chunk.js",
-    "static/css/main.47b80a1a.chunk.css",
-    "static/js/main.21d0973a.chunk.js"
+    "static/js/2.d5e37aae.chunk.js",
+    "static/css/main.49ac01c4.chunk.css",
+    "static/js/main.36ec1111.chunk.js"
   ]
 }
