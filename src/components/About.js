@@ -6,7 +6,7 @@ function About(props) {
   return (
       <div ref={props.refList.refAbout} className="container mt-5">
           <Slide right>
-              About
+              <span className="section-title">About</span>
           </Slide>
       </div>
   );

@@ -10,6 +10,7 @@ import Body from './Body.js'
 import { connect } from 'react-redux'
 import { setScreenSize } from './redux/actions'
 import { screenSizes, mediaList } from './data/constants'
+import Intro from "./components/Intro"
 import Nav from "./components/Nav.js"
 import Projects from "./components/Projects"
 import About from "./components/About"
@@ -54,6 +55,7 @@ useEffect(()=>{
     <div className="App">
       
       <Nav refList={refList}/>
+      <Intro refList={refList} />
       <Projects refList= {refList}/>
       <About refList={refList} />
       <Contact refList={refList}/>

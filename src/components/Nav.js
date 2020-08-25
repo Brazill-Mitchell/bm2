@@ -55,7 +55,7 @@ class Nav extends React.Component {
               <span
                 className="nav-item"
                 onClick={() => {
-                  this.jumpTo(this.props.refList.refHome);
+                  this.jumpTo(this.props.refList.refIntro);
                 }}
               >
                 HOME

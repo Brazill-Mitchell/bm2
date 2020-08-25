@@ -101,6 +101,31 @@ textarea{
     font-weight: 700;
 }
 
+.project-carousel-container{
+    width: 60%;
+    clip-path:  polygon(0 0, 25% 0, 25% 100%, 0 100%);
+}
+.project-item{
+    flex: 0 20%;
+}
+.project-image{
+
+}
+
+.carousel-control-container{
+
+}
+.carousel-index{
+    clip-path: circle(40%);
+    width: 20px;
+    height: 20px;
+    background-color: rosybrown;
+    cursor: pointer;
+}
+.carousel-index-selected{
+
+}
+
 /* Projects */
 
 .project-container{
@@ -184,13 +209,31 @@ textarea{
     -moz-transition: .2s all ease-in-out;
     -ms-transition: .2s all ease-in-out;
     -o-transition: .2s all ease-in-out;
+    transform: scale(.9);
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
+    opacity: .6;
 }
 .preview-image:hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
+    opacity: .8;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+.preview-selected{
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+.preview-selected{
+    opacity: 1 !important;
 }
 .github-image{
     width: 1.2em;
@@ -463,10 +506,36 @@ textarea{
     }
 }
 .contact-image-container{
-    width: 40%;
     align-self: center;
+    align-items: center;
 }
 .contact-image{
     flex: 0 20%;
+    height: fit-content;
     cursor: pointer;
+    transition: .1s all ease-in-out;
+    -webkit-transition: .1s all ease-in-out;
+    -moz-transition: .1s all ease-in-out;
+    -ms-transition: .1s all ease-in-out;
+    -o-transition: .1s all ease-in-out;
+}
+.contact-image:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 850px) {
+    .contact-image-container{
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 850px) {
+    .contact-image-container{
+        width: 25%;
+    }
 }
