@@ -7,13 +7,13 @@ import { projectNames, screenSizes } from "../data/constants"
 function ProjectItem(props){
     
     const project = projectData[props.projectTitle]
-    const [displayImage,setDisplayImage] = useState()
+    const [displayImage,setDisplayImage] = useState(project.previewImages[0])
     
     function handleFocus(image){
         if(image !== undefined){
             setDisplayImage(image)
-        }else if (displayImage !== project.mainImage){
-            setDisplayImage({image: project.mainImage})
+        }else if (displayImage !== project.previewImages[0]){
+            setDisplayImage({image: project.previewImages[0].image})
         }
     }
 
@@ -43,7 +43,7 @@ function ProjectItem(props){
                                             alt=""
                                             src={displayImage !== undefined
                                                 ? displayImage.image
-                                                : projectData[props.projectTitle].mainImage    
+                                                : project.mainImage    
                                             } 
                                         ></img>
                                     </div>
@@ -59,15 +59,15 @@ function ProjectItem(props){
                                 {/* Description */}
                                 <div className="project-description-container d-flex flex-column w-100 ml-2">
                                     <div className='project-text-area my-auto d-flex flex-column'>
-                                        <div className="project-title">{projectData[props.projectTitle].title}</div>
-                                        <p className="project-summary">{projectData[props.projectTitle].summary}</p>
+                                        <div className="project-title">{project.title}</div>
+                                        <p className="project-summary">{project.summary}</p>
                 
                                         {/* Links */}
                                         <div className="project-links-container d-flex mt-2 mb-1">
-                                            <a className="project-link-style button-elevation" href={projectData[props.projectTitle].links.projectUrl} target="blank">
-                                                <span className="project-link-name text-elevation">{projectData[props.projectTitle].title}</span>
+                                            <a className="project-link-style button-elevation" href={project.links.projectUrl} target="blank">
+                                                <span className="project-link-name text-elevation">{project.title}</span>
                                             </a>
-                                            <a className="project-link-style ml-1 button-elevation" href={projectData[props.projectTitle].links.github} target="blank">
+                                            <a className="project-link-style ml-1 button-elevation" href={project.links.github} target="blank">
                                                 <div className="project-github-link d-flex flex-row ml-2">
                                                     <span className="github-title text-elevation">Github</span>
                                                     <div className="github-image image-elevation my-auto ml-1 rounded-circle"></div>
@@ -78,14 +78,17 @@ function ProjectItem(props){
                 
                                     {/* Preview Images */}
                                     <div className="w-100 mt-2 mt-auto">
-                                        {projectData[props.projectTitle] !== undefined 
+                                        {project !== undefined 
                                             ? <div className="d-flex preview-image-container">
-                                                {projectData[props.projectTitle].previewImages.map((image,index) => {
+                                                {project.previewImages.map((image,index) => {
                                                     return <div  
                                                                 onClick={(e)=>{e.stopPropagation();handleFocus(image)}}
-                                                                className={displayImage === image 
-                                                                    ? "preview-image preview-selected"
-                                                                    : "preview-image"
+                                                                className={ displayImage === project.previewImages[0]
+                                                                        ? "preview-image preview-selected"
+                                                                        : displayImage === image
+                                                                            ? "preview-image preview-selected"
+                                                                            : "preview-image"
+                                                                            
                                                                 }>
                                                             <img className='img img-elevation' key={index} src={image.image} alt=""></img>
                                                         </div>
@@ -109,7 +112,7 @@ function ProjectItem(props){
                                 <div className="project-description-container d-flex flex-column w-100 ml-2">
                                 
                                 {/* Title */}
-                                <div className="project-title mb-2">{projectData[props.projectTitle].title}</div>
+                                <div className="project-title mb-2">{project.title}</div>
 
                                     {/* Images */}
                                     <div className='mobile-project-images-container'>
@@ -122,7 +125,7 @@ function ProjectItem(props){
                                                     alt=""
                                                     src={displayImage !== undefined
                                                         ? displayImage.image
-                                                        : projectData[props.projectTitle].mainImage    
+                                                        : project.mainImage    
                                                     } 
                                                 ></img>
                                             </div>
@@ -137,9 +140,9 @@ function ProjectItem(props){
                 
                                         {/* Preview Images */}
                                         <div className="w-100 mt-2">
-                                            {projectData[props.projectTitle] !== undefined 
+                                            {project !== undefined 
                                                 ? <div className="d-flex preview-image-container">
-                                                    {projectData[props.projectTitle].previewImages.map((image,index) => {
+                                                    {project.previewImages.map((image,index) => {
                                                         return <div 
                                                                     className="preview-image" 
                                                                     onClick={(e)=>{e.stopPropagation();handleFocus(image)}}
@@ -159,14 +162,14 @@ function ProjectItem(props){
 
                                     {/* Text Area */}
                                     <div className='project-text-area mt-3'>
-                                        <p className="project-summary">{projectData[props.projectTitle].summary}</p>
+                                        <p className="project-summary">{project.summary}</p>
                 
                                         {/* Links */}
                                         <div className="project-links-container d-flex mb-1 w-100 w-100 justify-content-center">
-                                            <a className="project-link-style button-elevation" href={projectData[props.projectTitle].links.projectUrl} target="blank">
-                                                <span className="project-link-name text-elevation">{projectData[props.projectTitle].title}</span>
+                                            <a className="project-link-style button-elevation" href={project.links.projectUrl} target="blank">
+                                                <span className="project-link-name text-elevation">{project.title}</span>
                                             </a>
-                                            <a className="project-link-style ml-1 button-elevation" href={projectData[props.projectTitle].links.github} target="blank">
+                                            <a className="project-link-style ml-1 button-elevation" href={project.links.github} target="blank">
                                                 <div className="project-github-link d-flex flex-row ml-2">
                                                     <span className="github-title text-elevation">Github</span>
                                                     <div className="github-image image-elevation my-auto ml-1 rounded-circle"></div>

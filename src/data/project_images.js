@@ -38,6 +38,10 @@ export const projectPreviewImages = {
         //     description: "main"
         // },
         {
+            image: geckoMain,
+            summary: "first"
+        },
+        {
             image: geckoLanding,
             description: "landing"
         },
@@ -52,13 +56,17 @@ export const projectPreviewImages = {
         {
             image: webPost,
             description: "Display app description and thumbnail in search results and link sharing."
-        }
+        }, 
     ],
     [projectNames.ATOMIST]: [
         // {
         //     image: atomistLanding,
         //     description: "landing"
         // },
+        {
+            image: atomistLanding,
+            summary: "first"
+        },
         {
             image: atomistLandingResponsive,
             description: "landing responsive"
@@ -70,13 +78,17 @@ export const projectPreviewImages = {
         {
             image: pricingResponsive,
             description: "pricing responsive"
-        }
+        }, 
     ],
     [projectNames.CONNECT_X]: [
         // {
         //     image: full8,
         //     description: "full 8"
         // },
+        {
+            image: full8,
+            summary: "first"
+        },
         {
             image: full14,
             description: "full 4"
@@ -88,12 +100,17 @@ export const projectPreviewImages = {
         {
             image: fullEmpty20,
             description: ""
-        }],
+        }, 
+    ],
     [projectNames.PAINT]: [
         // {
         //     image: full,
         //     description: "full"
         // },
+        {
+            image: full,
+            summary: "first"
+        },
         {
             image: analysis,
             description: ""
@@ -105,5 +122,6 @@ export const projectPreviewImages = {
         {
             image: paintStyle,
             description: ""
-        }]
+        }, 
+    ]
 }

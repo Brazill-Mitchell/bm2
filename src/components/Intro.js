@@ -4,31 +4,56 @@ import { projectData } from "../data/projects"
 import { projectNames, screenSizes } from "../data/constants"
 
 function Intro(props){
+    // carousel control
+    const projectCount = Object.keys(projectNames).length
+    const controlIncrement = 100 / projectCount
+    
+    // const [currentProjectItem,setCurrentProjectItem] = useState(controlIncrement)
+    const [carouselStyle,setCarouselStyle] = useState(
+        {
+            style: {
+                transform: `translateX:(${controlIncrement * 0})`
+            }
+        }
+    )
 
-    const [selectedProject,setSelectedProject] = useState(0)
+    function moveCarousel(index){
+        setCarouselStyle(
+            {
+                transform: `translateX(${controlIncrement * index * -1}%)`
+            }
+        )
+    }
+
+    
 
     return(
-        <div ref={props.refList.refIntro} className="container d-flex justify-content-center flex-column mt-5 bg-primary">
+        <div ref={props.refList.refIntro} className="d-flex justify-content-center flex-column mt-5">
             <Slide left>
-                <div>{selectedProject}</div>
+                <div>Project Name</div>
                 {/* images */}
-                <div className="project-carousel-container d-flex justify-content-between">
-                    {Object.keys(projectNames).map((currentProject,index) => {
-                        return <div className="project-item">
-                                    <div className="project-image">
-                                        <img className="img" src={projectData[currentProject].mainImage} alt=""/>
-                                    </div>
-                            </div>
-                    })}
+                <div className="project-carousel-container d-flex mx-auto justify-content-center">
+                    <div 
+                        className='project-carousel-items d-flex justify-content-between'
+                        style={carouselStyle}    
+                    >
+                        {Object.keys(projectNames).map((currentProject,index) => {
+                            return <div className="project-item" key={index}>
+                                        <div className="project-image">
+                                            <img className="img" src={projectData[currentProject].mainImage} alt=""/>
+                                        </div>
+                                </div>
+                        })}
+                    </div>
                 </div>
 
                 {/* control */}
-                <div className="carousel-control-container d-flex w-25">
+                <div className="carousel-control-container d-flex w-25 mx-auto">
                     {Object.keys(projectNames).map((project,index) => {
                         return <div 
                             className="carousel-index mx-auto" 
                             key={index}
-                            onClick={()=>{setSelectedProject(index)}}
+                            onClick={()=>{moveCarousel(index)}}
                         ></div>
                     })}
                 </div>
