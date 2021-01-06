@@ -4,7 +4,7 @@ import { projectMainImages, projectPreviewImages } from "./project_images"
 export const projectData = {
     NW: {
         title: "NW",
-        // summary: ,
+        summary: " ",
         links: {
             github: "https://github.com/Brazill-Mitchell/nw",
             projectUrl: "https://brazill-mitchell.github.io/nw/"
@@ -14,7 +14,7 @@ export const projectData = {
     },
     PHLASK: {
         title: "PHLASK",
-        // summary: ,
+        summary: " ",
         links:
             {
                github: "https://github.com/phlask/phlask-map",

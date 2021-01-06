@@ -39,7 +39,8 @@ export const projectPreviewImages = {
         // },
         {
             image: geckoMain,
-            summary: "first"
+            summary: "first",
+            description: "landing"
         },
         {
             image: geckoLanding,
@@ -65,7 +66,8 @@ export const projectPreviewImages = {
         // },
         {
             image: atomistLanding,
-            summary: "first"
+            summary: "first",
+            description: "landing"
         },
         {
             image: atomistLandingResponsive,
@@ -87,7 +89,8 @@ export const projectPreviewImages = {
         // },
         {
             image: full8,
-            summary: "first"
+            summary: "first",
+            description: "landing"
         },
         {
             image: full14,
@@ -109,7 +112,8 @@ export const projectPreviewImages = {
         // },
         {
             image: full,
-            summary: "first"
+            summary: "first",
+            description: "landing"
         },
         {
             image: analysis,
