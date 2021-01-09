@@ -15,6 +15,7 @@ import Nav from "./components/Nav.js"
 import Projects from "./components/Projects"
 import About from "./components/About"
 import Contact from "./components/Contact"
+import Test from "./components/Test"
 
 
 function App(props) {
@@ -55,6 +56,7 @@ useEffect(()=>{
     <div className="App">
       
       <Nav refList={refList}/>
+      {/* <Test/> */}
       <Intro refList={refList} />
       <Projects refList= {refList}/>
       <About refList={refList} />

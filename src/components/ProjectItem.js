@@ -93,7 +93,7 @@ function ProjectItem(props) {
                   <div className="d-flex preview-image-container">
                     {project.previewImages.map((image, index) => {
                       return (
-                        <div
+                        <div key={index}
                           onClick={(e) => {
                             e.stopPropagation();
                             handleFocus(image);

@@ -5,7 +5,9 @@ export const projectNames = {
     GECKO_NOTES: "GECKO_NOTES",
     ATOMIST: "ATOMIST",
     CONNECT_X: "CONNECT_X",
-    PAINT: "PAINT"
+    PAINT: "PAINT",
+    NW: "NW",
+    PHLASK: "PHLASK"
 }
 
 export const screenSizes = {

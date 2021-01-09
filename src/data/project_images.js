@@ -32,6 +32,56 @@ export const projectMainImages = {
 }
 
 export const projectPreviewImages = {
+    [projectNames.NW]: [
+        // {
+        //     image: geckoMain,
+        //     description: "main"
+        // },
+        {
+            image: geckoMain,
+            summary: "first",
+            description: "landing"
+        },
+        {
+            image: geckoLanding,
+            description: "landing"
+        },
+        {
+            image: geckoResponsive,
+            description: "The web app can adjust to any screen size."
+        },
+        {
+            image: signIn,
+            description: "Sign in using an existing Gmail account."
+        },
+        {
+            image: webPost,
+            description: "Display app description and thumbnail in search results and link sharing."
+        }, 
+    ],
+    [projectNames.PHLASK]: [
+        // {
+        //     image: atomistLanding,
+        //     description: "landing"
+        // },
+        {
+            image: atomistLanding,
+            summary: "first",
+            description: "landing"
+        },
+        {
+            image: atomistLandingResponsive,
+            description: "landing responsive"
+        },
+        {
+            image: pricing,
+            description: "pricing"
+        },
+        {
+            image: pricingResponsive,
+            description: "pricing responsive"
+        }, 
+    ],
     [projectNames.GECKO_NOTES]: [
         // {
         //     image: geckoMain,
