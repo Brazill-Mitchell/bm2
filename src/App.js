@@ -16,6 +16,7 @@ import Projects from "./components/Projects"
 import About from "./components/About"
 import Contact from "./components/Contact"
 import Test from "./components/Test"
+import Zoom from "./components/Zoom"
 
 
 function App(props) {
@@ -56,11 +57,12 @@ useEffect(()=>{
     <div className="App">
       
       <Nav refList={refList}/>
+      <Zoom/>
       {/* <Test/> */}
-      <Intro refList={refList} />
+      {/* <Intro refList={refList} /> */}
       <Projects refList= {refList}/>
       <About refList={refList} />
-      <Contact refList={refList}/>
+      {/* <Contact refList={refList}/> */}
       {/* <div id='loading-container' className="bg-success"> */}
           {/* <div id='loading-img'></div> */}
       {/* </div> */}

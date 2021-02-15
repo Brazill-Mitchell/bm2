@@ -1,3 +1,13 @@
+import phlaskMain from "../images/projectImages/phlask/phlaskMain.png"
+import phlaskSelectedTap from "../images/projectImages/phlask/phlaskSelectedTap.png"
+import phlaskHours from "../images/projectImages/phlask/phlaskHours.png"
+
+import nwMain from "../images/projectImages/nw/nwMain.png"
+import nwServicesMobile from "../images/projectImages/nw/nwServicesMobile.png"
+import nwServices from "../images/projectImages/nw/nwServices.png"
+import nwCardsMobile from "../images/projectImages/nw/nwCardsMobile.png"
+import nwCards from "../images/projectImages/nw/nwCards.png"
+
 import geckoMain from "../images/projectImages/gecko/geckoMain.jpg"
 import geckoLanding from "../images/projectImages/gecko/geckoLanding.jpg"
 import geckoResponsive from "../images/projectImages/gecko/geckoResponsive.jpg"
@@ -23,8 +33,8 @@ import { projectNames } from "./constants"
 
 
 export const projectMainImages = {
-    // [projectNames.PHLASK]: phlaskMain,
-    // [projectNames.NW]: nwMain,
+    [projectNames.PHLASK]: phlaskMain,
+    [projectNames.NW]: nwMain,
     [projectNames.GECKO_NOTES]: geckoMain,
     [projectNames.ATOMIST]: atomistLanding,
     [projectNames.CONNECT_X]: full8,
@@ -32,54 +42,42 @@ export const projectMainImages = {
 }
 
 export const projectPreviewImages = {
-    [projectNames.NW]: [
-        // {
-        //     image: geckoMain,
-        //     description: "main"
-        // },
-        {
-            image: geckoMain,
-            summary: "first",
-            description: "landing"
-        },
-        {
-            image: geckoLanding,
-            description: "landing"
-        },
-        {
-            image: geckoResponsive,
-            description: "The web app can adjust to any screen size."
-        },
-        {
-            image: signIn,
-            description: "Sign in using an existing Gmail account."
-        },
-        {
-            image: webPost,
-            description: "Display app description and thumbnail in search results and link sharing."
-        }, 
-    ],
     [projectNames.PHLASK]: [
-        // {
-        //     image: atomistLanding,
-        //     description: "landing"
-        // },
         {
-            image: atomistLanding,
+            image: phlaskMain,
             summary: "first",
-            description: "landing"
+            description: "PHLASK map"
         },
         {
-            image: atomistLandingResponsive,
-            description: "landing responsive"
+            image: phlaskSelectedTap,
+            description: "Location Selected"
         },
         {
-            image: pricing,
-            description: "pricing"
+            image: phlaskHours,
+            description: "Hours "
+        },
+    ],
+    [projectNames.NW]: [
+        {
+            image: nwMain,
+            summary: "first",
+            description: "Ladning Page"
         },
         {
-            image: pricingResponsive,
-            description: "pricing responsive"
+            image: nwCards,
+            description: "Feature Cards"
+        },
+        {
+            image: nwCardsMobile,
+            description: "Mobile Card Layout"
+        },
+        {
+            image: nwServices,
+            description: "Services"
+        },
+        {
+            image: nwServicesMobile,
+            description: "Mobile Services Layout"
         }, 
     ],
     [projectNames.GECKO_NOTES]: [
@@ -90,11 +88,11 @@ export const projectPreviewImages = {
         {
             image: geckoMain,
             summary: "first",
-            description: "landing"
+            description: "Notes Page"
         },
         {
             image: geckoLanding,
-            description: "landing"
+            description: "Login Screen"
         },
         {
             image: geckoResponsive,
@@ -102,7 +100,7 @@ export const projectPreviewImages = {
         },
         {
             image: signIn,
-            description: "Sign in using an existing Gmail account."
+            description: "   in using an existing Gmail account."
         },
         {
             image: webPost,
@@ -117,19 +115,19 @@ export const projectPreviewImages = {
         {
             image: atomistLanding,
             summary: "first",
-            description: "landing"
+            description: "Landing Page"
         },
         {
             image: atomistLandingResponsive,
-            description: "landing responsive"
+            description: "Landing Page Mobile Layout"
         },
         {
             image: pricing,
-            description: "pricing"
+            description: "Pricing Page"
         },
         {
             image: pricingResponsive,
-            description: "pricing responsive"
+            description: "Pricing Mobile Layout"
         }, 
     ],
     [projectNames.CONNECT_X]: [

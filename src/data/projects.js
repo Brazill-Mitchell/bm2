@@ -3,8 +3,8 @@ import { projectMainImages, projectPreviewImages } from "./project_images"
 
 export const projectData = {
     NW: {
-        title: "NW",
-        summary: " ",
+        title: "Living Construction",
+        summary: "A client prototype website aimed to connect investors with sellers, and potential homeowners with investors",
         links: {
             github: "https://github.com/Brazill-Mitchell/nw",
             projectUrl: "https://brazill-mitchell.github.io/nw/"
@@ -14,7 +14,7 @@ export const projectData = {
     },
     PHLASK: {
         title: "PHLASK",
-        summary: " ",
+        summary: "PHLASK is a non-profit initiative to provide easily accessible information on sources of free water & food in the Philadelphia area.",
         links:
             {
                github: "https://github.com/phlask/phlask-map",

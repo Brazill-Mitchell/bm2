@@ -76,14 +76,14 @@ class Nav extends React.Component {
               >
                 ABOUT
               </span>
-              <span
+              {/* <span
                 className="nav-item"
                 onClick={() => {
                   this.jumpTo(this.props.refList.refContact);
                 }}
               >
                 CONTACT
-              </span>
+              </span> */}
             </div>
           </div>
         </Fade>

@@ -1,13 +1,11 @@
 
 export const projectNames = {
-    // NW: "NW",
-    // PHLASK: "PLASK",
+    PHLASK: "PLASK",
+    NW: "NW",
     GECKO_NOTES: "GECKO_NOTES",
     ATOMIST: "ATOMIST",
-    CONNECT_X: "CONNECT_X",
-    PAINT: "PAINT",
-    NW: "NW",
-    PHLASK: "PHLASK"
+    // CONNECT_X: "CONNECT_X",
+    // PAINT: "PAINT"
 }
 
 export const screenSizes = {
