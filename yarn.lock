@@ -5134,11 +5134,6 @@
     "fs-extra" "^8.1.0"
     "globby" "^6.1.0"
 
-"github-markdown-css@^4.0.0":
-  "integrity" "sha512-mH0bcIKv4XAN0mQVokfTdKo2OD5K8WJE9+lbMdM32/q0Ie5tXgVN/2o+zvToRMxSTUuiTRcLg5hzkFfOyBYreg=="
-  "resolved" "https://registry.npmjs.org/github-markdown-css/-/github-markdown-css-4.0.0.tgz"
-  "version" "4.0.0"
-
 "glob-parent@^3.1.0":
   "integrity" "sha1-nmr2KZ2NO9K9QEMIMr0RPfkGxa4="
   "resolved" "https://registry.npmjs.org/glob-parent/-/glob-parent-3.1.0.tgz"

@@ -215,6 +215,14 @@ textarea{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.npm-image{
+    width: 1.2em;
+    height: 1.2em;
+    background-image: url("images/general/npm.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 /* Contact */

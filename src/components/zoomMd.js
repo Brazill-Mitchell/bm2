@@ -7,9 +7,7 @@ This package makes it simple to use **Zoom's JSON Web Token** functions with **N
 
 **Usage**
 
-To use node-zoom-jwt you will need your [APIKey & APISecret](https://marketplace.zoom.us/docs/guides/build/jwt-app)
-
-Start by installing the node-zoom-jwt package:
+After installing the node-zoom-jwt package:
 
 > npm i node-zoom-jwt
 
@@ -19,7 +17,6 @@ Add node-zoom-jwt to your file:
 const Zoom = require("node-zoom-jwt")
 \`\`\`
 Use your APIKey & APISecret to connect to your app:
-
 \`\`\`
 Zoom.connect(
 APIKey,
