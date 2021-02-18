@@ -8,3 +8,6 @@
     width: 80vw;
     /* text-align: start; */
 }
+a{
+    color: var(--color-tertiary-harmony) !important;
+}

@@ -6,7 +6,7 @@ import 'github-markdown-css'
 
 function Zoom() {
   return (
-    <div className="md-container markdown-body">
+    <div className="md-container markdown-body" style={{color:"inherit"}}>
       <div className="md-section">
         <ReactMarkdown source={mdSrc} />
       </div>
