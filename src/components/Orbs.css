@@ -1,0 +1,246 @@
+:root{
+    --reflection-height: 140px;
+  }
+  
+  
+  #container-1{
+    position: relative;
+    top: 20px;
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+  }
+  
+  #ball-1{
+    background-color:red;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    opacity: .6;
+  
+    animation-name: ball-1-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  #ball-1-reflection{
+    background-color:red;
+    position: absolute;
+    top: var(--reflection-height);
+    height: 10px;
+    width: 100px;
+    border-radius: 50%;
+    opacity: .3;
+  
+    animation-name: ball-reflection-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes ball-1-move {
+    0%{
+      left: 0px;
+      opacity: .6;
+  
+    }
+    25%{
+      height: 125px;
+      width: 125px;
+      opacity: .8;
+    }
+    50%{
+      left:80vw;
+  
+      height: 100px;
+      width: 100px;
+  
+      opacity: .6;
+    }
+    75%{
+      height: 75px;
+      width: 75px;
+      opacity: .2;
+    }
+    100%{
+      left:0px;
+      height: 100px;
+      width: 100px;
+      opacity: .6;
+    }
+  }
+  @keyframes ball-reflection-move {
+    0%{
+      left: 0px;
+      opacity: .2;
+  
+    }
+    25%{
+      height: 12.5px;
+      width: 125px;
+      opacity: .6;
+    }
+    50%{
+      left:80vw;
+  
+      height: 10px;
+      width: 100px;
+  
+      opacity: .2;
+    }
+    75%{
+      height: .75px;
+      width: 75px;
+      opacity: .1;
+    }
+    100%{
+      left:0px;
+      height: 10px;
+      width: 100px;
+      opacity: .2;
+    }
+  }
+  
+  #ball-2{
+    background-color: orange;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  
+    animation-name: ball-1-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: .2s;
+    opacity: .6;
+  }
+  
+  #ball-3{
+    background-color:yellow;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    opacity: .6;
+  
+    animation-name: ball-1-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: .4s;
+  }
+  
+  #ball-4{
+    background-color:green;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    opacity: .6;
+  
+    animation-name: ball-1-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: .6s;
+  }
+  
+  #ball-5{
+    background-color:blue;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    opacity: .6;
+  
+    animation-name: ball-1-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: .8s;
+  }
+  
+  #ball-6{
+    background-color:purple;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    opacity: .6;
+  
+    animation-name: ball-1-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+  #ball-2-reflection{
+    background-color:orange;
+    position: absolute;
+    top: var(--reflection-height);
+    height: 10px;
+    width: 100px;
+    border-radius: 50%;
+    opacity: .3;
+  
+    animation-name: ball-reflection-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: .2s;
+  }
+  #ball-3-reflection{
+    background-color:yellow;
+    position: absolute;
+    top: var(--reflection-height);
+    height: 10px;
+    width: 100px;
+    border-radius: 50%;
+    opacity: .3;
+  
+    animation-name: ball-reflection-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: .4s;
+  
+  }
+  #ball-4-reflection{
+    background-color:green;
+    position: absolute;
+    top: var(--reflection-height);
+    height: 10px;
+    width: 100px;
+    border-radius: 50%;
+    opacity: .3;
+  
+    animation-name: ball-reflection-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: .6s;
+  
+  }
+  #ball-5-reflection{
+    background-color:blue;
+    position: absolute;
+    top: var(--reflection-height);
+    height: 10px;
+    width: 100px;
+    border-radius: 50%;
+    opacity: .3;
+  
+    animation-name: ball-reflection-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: .8s;
+  
+  }
+  #ball-6-reflection{
+    background-color:purple;
+    position: absolute;
+    top: var(--reflection-height);
+    height: 10px;
+    width: 100px;
+    border-radius: 50%;
+    opacity: .3;
+  
+    animation-name: ball-reflection-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  
+  }

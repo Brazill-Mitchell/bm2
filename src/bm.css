@@ -103,10 +103,6 @@ textarea{
 
 /* Projects */
 
-.project-container{
-    width: 100%;
-}
-
 .project-main-image-container{
     position: relative;
     flex: 0 50%;

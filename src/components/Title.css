@@ -1,0 +1,16 @@
+.intro-area{
+    height: 100vh;
+}
+.intro-quote{
+    font-size: 60px;
+    text-align: left;
+    margin: 50px;
+    font-weight: 600;
+}
+.intro-name{
+    font-size: 25px;
+    text-align: right;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    font-weight: 600;
+}

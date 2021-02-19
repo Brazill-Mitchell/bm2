@@ -9,7 +9,7 @@ import NavigateNextIcon from "@material-ui/icons/NavigateNext";
 
 // TODO: Add Carousel Arrows
 
-function Intro(props) {
+function IntroCarousel(props) {
   // carousel control
   const projectCount = Object.keys(projectNames).length;
   // const projectCount = 5;
@@ -27,6 +27,8 @@ function Intro(props) {
       (100 / projectCount) * shiftValue + controlIncrement / 2
     }%)`,
   });
+
+  // get width of the carousel
   useEffect(() => {
     try {
       setCarouselWidth(refCarousel.current.getBoundingClientRect().x);
@@ -108,7 +110,7 @@ function Intro(props) {
         carousel width: {carouselWidth}
       </div>
       <br />
-      <div className='d-flex'>
+      <div className='carousel-area-container'>
       <NavigateBeforeIcon
         className="carousel-nav-arrow-left"
         style={{ cursor: "pointer" }}
@@ -118,7 +120,7 @@ function Intro(props) {
       ></NavigateBeforeIcon>
       {/* images */}
       <div
-        className="project-carousel-container d-flex flex-row mx-auto justify-content-center"
+        className="project-carousel-container"
         ref={refCarousel}
       >
         <div
@@ -199,4 +201,4 @@ function Intro(props) {
   );
 }
 
-export default Intro;
+export default IntroCarousel;

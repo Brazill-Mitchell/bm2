@@ -13,6 +13,7 @@
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
     animation: clipPath 5s infinite ease-in-out;
     -webkit-animation: clipPath 5s infinite ease-in-out;
+    background-color: rgb(182, 176, 157);
 }
 
 @keyframes clipPath{

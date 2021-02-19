@@ -61,7 +61,7 @@ export const projectPreviewImages = {
         {
             image: nwMain,
             summary: "first",
-            description: "Ladning Page"
+            description: "Landing Page"
         },
         {
             image: nwCards,

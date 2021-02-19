@@ -16,6 +16,10 @@
     font-size: 25px;
     margin: 5px 0;
 }
+.md-text-group{
+    display: flex;
+    flex-direction: row;
+}
 .md-cmd{
     color: white;
     width: fit-content;
@@ -40,6 +44,9 @@
 }
 .md-link{
     color: var(--color-tertiary-harmony);
+}
+.md-link-code{
+
 }
 /* .md-section{
     width: 80vw;

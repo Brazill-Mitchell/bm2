@@ -16,9 +16,10 @@
 }
 
 .App {
+  font-size: 18px;
+  font-weight: 600;
   text-align: center;
   color: white;
-  font-weight: 500;
   /* background-color: var(--color-primary); */
   background-image: radial-gradient(circle, var(--color-primary) 0%, rgb(0, 155, 245) 100%);
 }

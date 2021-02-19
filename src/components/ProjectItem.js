@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import { Slide } from "react-reveal";
+import { Fade } from "react-reveal";
 import { projectData } from "../data/projects";
 import { projectNames, screenSizes } from "../data/constants";
 
@@ -11,7 +11,7 @@ function ProjectItem(props) {
   function handleFocus(image) {
     if (image !== undefined) {
       setDisplayImage(image);
-    } else{
+    } else {
       setDisplayImage({ image: project.previewImages[0].image });
     }
   }
@@ -28,7 +28,7 @@ function ProjectItem(props) {
             "mt-2 project-container container d-flex p-2"
       }
     >
-      <Slide right>
+      <Fade right distance="25%">
         {/* <div className="project-container container d-flex p-2"> */}
 
         {props.screenSize !== screenSizes.MOBILE ? (
@@ -50,50 +50,62 @@ function ProjectItem(props) {
 
               {/* desc */}
               <div className="project-main-image-desc mx-1">
-                  {/* display placeholder when no description is displayed to preserve spacing */}
-                {displayImage.description || <span style={{visibility:"hidden"}}>-</span>}
+                {/* display placeholder when no description is displayed to preserve spacing */}
+                {displayImage.description || (
+                  <span style={{ visibility: "hidden" }}>-</span>
+                )}
               </div>
             </div>
 
             {/* Description */}
             <div className="project-description-container d-flex flex-column w-100 ml-2">
               <div className="project-text-area my-auto d-flex flex-column">
-                <div className="project-title">{project.title}</div>
-                <p className="project-summary">{project.summary}</p>
+                <Fade down delay="100">
+                  <div className="project-title">{project.title}</div>
+                </Fade>
+                <Fade right delay="200" distance="25%">
+                  <p className="project-summary">{project.summary}</p>
+                </Fade>
 
                 {/* Links */}
                 <div className="project-links-container d-flex mt-2 mb-1">
-                  <a
-                    className="project-link-style button-elevation"
-                    href={project.links.projectUrl}
-                    target="blank"
-                  >
-                    <span className="project-link-name text-elevation">
-                      {project.title}
-                    </span>
-                  </a>
-                  <a
-                    className="project-link-style ml-1 button-elevation"
-                    href={project.links.github}
-                    target="blank"
-                  >
-                    <div className="project-github-link d-flex flex-row ml-2">
-                      <span className="github-title text-elevation">
-                        Github
+                  <Fade right delay="300" distance="25%">
+                    <a
+                      className="project-link-style button-elevation"
+                      href={project.links.projectUrl}
+                      target="blank"
+                    >
+                      <span className="project-link-name text-elevation">
+                        {project.title}
                       </span>
-                      <div className="github-image image-elevation my-auto ml-1 rounded-circle"></div>
-                    </div>
-                  </a>
+                    </a>
+                  </Fade>
+                  <Fade right delay="400" distance="25%">
+                    <a
+                      className="project-link-style ml-1 button-elevation"
+                      href={project.links.github}
+                      target="blank"
+                    >
+                      <div className="project-github-link d-flex flex-row ml-2">
+                        <span className="github-title text-elevation">
+                          Github
+                        </span>
+                        <div className="github-image image-elevation my-auto ml-1 rounded-circle"></div>
+                      </div>
+                    </a>
+                  </Fade>
                 </div>
               </div>
 
               {/* Preview Images */}
+              {/* <Fade up delay="500"> */}
               <div className="w-100 mt-2 mt-auto">
                 {project !== undefined ? (
                   <div className="d-flex preview-image-container">
                     {project.previewImages.map((image, index) => {
                       return (
-                        <div key={index}
+                        <div
+                          key={index}
                           onClick={(e) => {
                             e.stopPropagation();
                             handleFocus(image);
@@ -104,12 +116,18 @@ function ProjectItem(props) {
                               : "preview-image"
                           }
                         >
-                          <img
-                            className="img img-elevation"
-                            key={index}
-                            src={image.image}
-                            alt=""
-                          ></img>
+                          <Fade
+                            bottom
+                            delay={`${200 + index * 100}`}
+                            distance="25%"
+                          >
+                            <img
+                              className="img img-elevation"
+                              key={index}
+                              src={image.image}
+                              alt=""
+                            ></img>
+                          </Fade>
                         </div>
                       );
                     })}
@@ -118,6 +136,7 @@ function ProjectItem(props) {
                   []
                 )}
               </div>
+              {/* </Fade> */}
             </div>
           </div>
         ) : (
@@ -218,7 +237,7 @@ function ProjectItem(props) {
         )}
 
         {/* </div> */}
-      </Slide>
+      </Fade>
     </div>
   );
 }
