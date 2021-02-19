@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0e50a55d068c80fa24db09df423cb799",
+    "revision": "4b45a0e364b77190612abf697adc0dff",
     "url": "/bm2/index.html"
   },
   {
-    "revision": "819cb3092d6cc83211df",
+    "revision": "ec4084e828ec0464d0b4",
     "url": "/bm2/static/css/2.11829350.chunk.css"
   },
   {
-    "revision": "48fa709df857a1d6f509",
-    "url": "/bm2/static/css/main.7dcb5809.chunk.css"
+    "revision": "de95aac81b5780ef3073",
+    "url": "/bm2/static/css/main.9409bd3e.chunk.css"
   },
   {
-    "revision": "819cb3092d6cc83211df",
-    "url": "/bm2/static/js/2.daef9e30.chunk.js"
+    "revision": "ec4084e828ec0464d0b4",
+    "url": "/bm2/static/js/2.40bbafaf.chunk.js"
   },
   {
-    "revision": "4ba1a1c11c57ed15aa68008707a3d6b4",
-    "url": "/bm2/static/js/2.daef9e30.chunk.js.LICENSE.txt"
+    "revision": "89ea5e0ed13930f7b9c9c2f392e27cfe",
+    "url": "/bm2/static/js/2.40bbafaf.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "48fa709df857a1d6f509",
-    "url": "/bm2/static/js/main.21b36623.chunk.js"
+    "revision": "de95aac81b5780ef3073",
+    "url": "/bm2/static/js/main.5d47ec17.chunk.js"
   },
   {
     "revision": "255f8ee84d7be4095185",
@@ -80,12 +80,44 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bm2/static/media/gmail.8fe68a3d.png"
   },
   {
-    "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
-    "url": "/bm2/static/media/logo.5d5d9eef.svg"
+    "revision": "ee7cd8ed2dcec943251eb2763684fc6f",
+    "url": "/bm2/static/media/logo.ee7cd8ed.svg"
+  },
+  {
+    "revision": "f033b758a4786ddaeadbb4e27d410146",
+    "url": "/bm2/static/media/nwCards.f033b758.png"
+  },
+  {
+    "revision": "acf8c2982ddc20f9e31ee9e92f08c589",
+    "url": "/bm2/static/media/nwCardsMobile.acf8c298.png"
+  },
+  {
+    "revision": "1bdb2ebeaff210a6113a1c952eb5212a",
+    "url": "/bm2/static/media/nwMain.1bdb2ebe.png"
+  },
+  {
+    "revision": "0901b2e055a22e27b03e901ec8251757",
+    "url": "/bm2/static/media/nwServices.0901b2e0.png"
+  },
+  {
+    "revision": "5cd94a2bbf72ff5baeb79221ebd28937",
+    "url": "/bm2/static/media/nwServicesMobile.5cd94a2b.png"
   },
   {
     "revision": "bcc877fcc29396c2532d0e28f0b4f6a3",
     "url": "/bm2/static/media/paintStyle.bcc877fc.jpg"
+  },
+  {
+    "revision": "adf83e0de3ba173a28d5dd166eb18af3",
+    "url": "/bm2/static/media/phlaskHours.adf83e0d.png"
+  },
+  {
+    "revision": "17ee19e179945a4993ff3a28949d92d2",
+    "url": "/bm2/static/media/phlaskMain.17ee19e1.png"
+  },
+  {
+    "revision": "009cbd8de7998e1b86508558170f2fc4",
+    "url": "/bm2/static/media/phlaskSelectedTap.009cbd8d.png"
   },
   {
     "revision": "d7a02dbb9d4b1bc87ffd4349442266c4",
