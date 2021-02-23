@@ -54,8 +54,6 @@
 @media screen and (max-width: 900px) {
     .md-container{
         width: 90vw;
-        margin: 20px auto 10vh auto;
-        /* padding-bottom: 5px; */
     }
     .md-code{
         width: fit-content;
@@ -80,13 +78,27 @@
         padding-bottom: 5px;
     }
     .md-code{
-        width: 80%;
+        width: fit-content;
+        max-width: 80%;
     }
     .md-link{
         color: white;
         text-decoration: underline;
     }
-    .md-link-code{
-        margin: 20px 0;
+  }
+
+  /* mobile */
+@media screen and (min-width: 0px) {
+    .md-container{
+        padding-bottom: 5px;
+        margin: 20px auto 10vh auto;
+    }
+    .md-code{
+        width: fit-content;
+        max-width: 80%;
+    }
+    .md-link{
+        color: white;
+        text-decoration: underline;
     }
   }

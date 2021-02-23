@@ -31,7 +31,7 @@ function ProjectItem(props) {
       <Fade right distance="25%">
         {/* <div className="project-container container d-flex p-2"> */}
 
-        {props.screenSize !== screenSizes.MOBILE ? (
+        {props.screenSize === screenSizes.COMPUTER || props.screenSize === screenSizes.XL ? (
           <div className="project-container container d-flex p-2">
             {/* Main Image */}
             <div className="project-main-image-container container my-auto">
@@ -99,7 +99,7 @@ function ProjectItem(props) {
 
               {/* Preview Images */}
               {/* <Fade up delay="500"> */}
-              <div className="w-100 mt-2 mt-auto">
+              <div className="w-100 mt-2">
                 {project !== undefined ? (
                   <div className="d-flex preview-image-container">
                     {project.previewImages.map((image, index) => {
@@ -178,21 +178,32 @@ function ProjectItem(props) {
                       {project.previewImages.map((image, index) => {
                         return (
                           <div
-                            className="preview-image"
+                          key={index}
                             onClick={(e) => {
                               e.stopPropagation();
                               handleFocus(image);
                             }}
-                            style={
-                              index === 0 ? { opacity: 1 } : { opacity: 0.6 }
+                            className={
+                              displayImage === project.previewImages[index]
+                                ? "preview-image preview-selected"
+                                : "preview-image"
                             }
+                            // style={
+                            //   index === 0 ? { opacity: 1 } : { opacity: 0.6 }
+                            // }
                           >
-                            <img
-                              className="img img-elevation"
-                              key={index}
-                              src={image.image}
-                              alt=""
-                            ></img>
+                            <Fade
+                              bottom
+                              delay={`${200 + index * 100}`}
+                              distance="25%"
+                            >
+                              <img
+                                className="img img-elevation"
+                                key={index}
+                                src={image.image}
+                                alt=""
+                              ></img>
+                            </Fade>
                           </div>
                         );
                       })}
