@@ -1,0 +1,62 @@
+
+/* Nav */
+.cont{
+    
+}
+.nav-item-container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 25%;
+    background-image: linear-gradient(90deg, #0157c770 0%, #00367c7e 100%);
+}
+
+.nav-item{
+    position: relative;
+    cursor: pointer;
+    font-weight: 700;
+    transition: .1s all ease-in-out;
+    -webkit-transition: .1s all ease-in-out;
+    -moz-transition: .1s all ease-in-out;
+    -ms-transition: .1s all ease-in-out;
+    -o-transition: .1s all ease-in-out;
+}
+.nav-item:hover{
+    color: white;
+}
+.nav-item:after{
+    position: absolute;
+    left: -10%;
+    content: "";
+    width: 0;
+    height: 100%;
+    transition: .2s all ease-in-out;
+    -webkit-transition: .2s all ease-in-out;
+    -moz-transition: .2s all ease-in-out;
+    -ms-transition: .2s all ease-in-out;
+    -o-transition: .2s all ease-in-out;
+    border-bottom: 2px solid white;
+    animation-name: nav-line;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.nav-item:hover:after{
+    width: 100%;
+    left: 0;
+    animation-name: none;
+}
+
+@keyframes nav-line{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 110%;
+    }
+}
+
+.section-title{
+    font-size: 45px;
+    font-weight: 700;
+}

@@ -1,11 +1,14 @@
 .intro-area{
-    height: 100vh;
+    /* height: 30vh; */
 }
 .intro-quote{
+    height: fit-content;
     font-size: 60px;
     text-align: left;
-    margin: 50px;
+    margin: 0 50px 50px 50px;
+    padding: 10vh 0 0 0;
     font-weight: 600;
+    /* background-color: khaki; */
 }
 .intro-name{
     font-size: 25px;
@@ -13,4 +16,14 @@
     margin-bottom: 50px;
     margin-right: 20px;
     font-weight: 600;
+}
+.intro-nav-options-container{
+    margin: 0 auto;
+    display: flex;
+    width: 60vw;
+    justify-content: space-evenly;
+}
+.intro-nav-option{
+    font-size: 25px;
+    cursor: pointer;
 }

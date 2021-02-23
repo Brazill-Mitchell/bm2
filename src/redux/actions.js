@@ -9,3 +9,9 @@ export const setCurrentProject = project => ({
     type: SET_CURRENT_PROJECT,
     project: project
 })
+
+export const SET_NAV_POSITION = 'SET_NAV_POSITION'
+export const setNavPosition = position => ({
+    type: SET_NAV_POSITION,
+    position: position
+})

@@ -2,9 +2,9 @@ import React from "react";
 import { Fade } from "react-reveal";
 import "./Md.css";
 
-function Zoom() {
+function Zoom(props) {
   return (
-    <div>
+    <div ref={props.refCode}>
       <Fade top>
         <div className="section-title">{"{ Code }"}</div>
       </Fade>

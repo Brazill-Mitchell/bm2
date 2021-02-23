@@ -1,37 +1,34 @@
-import * as actions from './actions.js'
-import { projectNames } from "../data/constants"
-import { screenSizes } from "../data/constants"
-
+import * as actions from "./actions.js";
+import { projectNames } from "../data/constants";
+import { screenSizes } from "../data/constants";
 
 const initialState = {
-    screensize: screenSizes.MOBILE,
-    currentProject: projectNames.ATOMIST
-}
+  screensize: screenSizes.MOBILE,
+  currentProject: projectNames.ATOMIST,
+};
 
-export default (state= initialState, act) => {
-    switch (act.type) {
-        
-        case actions.SET_SCREEN_SIZE:
-            if(act.screenSize === screenSizes.MOBILE){
-                return {...state, screenSize: screenSizes.MOBILE}
-            }
-            if(act.screenSize === screenSizes.TABLET){
-                return {...state, screenSize: screenSizes.TABLET}
-            }
-            if(act.screenSize === screenSizes.XL){
-                return {...state, screenSize: screenSizes.XL}
-            }
-            else{
-                return {...state, screenSize: screenSizes.COMPUTER}
-            }
+export default (state = initialState, act) => {
+  switch (act.type) {
+    case actions.SET_SCREEN_SIZE:
+      if (act.screenSize === screenSizes.MOBILE) {
+        return { ...state, screenSize: screenSizes.MOBILE };
+      }
+      if (act.screenSize === screenSizes.TABLET) {
+        return { ...state, screenSize: screenSizes.TABLET };
+      }
+      if (act.screenSize === screenSizes.XL) {
+        return { ...state, screenSize: screenSizes.XL };
+      } else {
+        return { ...state, screenSize: screenSizes.COMPUTER };
+      }
 
-        case actions.SET_CURRENT_PROJECT:
-            return {...state, project: act.project}
-            
-            
+    case actions.SET_CURRENT_PROJECT:
+      return { ...state, project: act.project };
 
-        
-        default: return state
-    }
+    case actions.SET_NAV_POSITION:
+      return { ...state, navPosition: act.position };
 
-}
+    default:
+      return state;
+  }
+};
