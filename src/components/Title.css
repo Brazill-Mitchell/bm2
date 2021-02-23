@@ -2,8 +2,11 @@
     /* height: 30vh; */
 }
 .intro-quote{
+    display: flex;
     height: fit-content;
-    font-size: 60px;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
     text-align: left;
     margin: 0 50px 50px 50px;
     padding: 10vh 0 0 0;
@@ -27,3 +30,28 @@
     font-size: 25px;
     cursor: pointer;
 }
+
+/* desktop */
+
+@media screen and (min-width: 800px) {
+    .intro-quote{
+        font-size: 60px;
+    }
+  }
+
+  /* table */
+
+@media screen and (min-width: 600px) {
+    .intro-quote{
+        font-size: 45px;
+    }
+  }
+
+  /* mobile */
+
+@media screen and (max-width: 600px) {
+    .intro-quote{
+        font-size: 30px;
+        margin: 0 5px;
+    }
+  }

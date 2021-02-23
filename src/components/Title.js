@@ -4,11 +4,10 @@ import { Fade } from "react-reveal";
 import "./Title.css";
 
 function Title(props) {
-
   return (
     <div className="intro-area">
       <div className="intro-quote">
-        <span>Hi, My name's Brazill</span>
+        <span>Hi, my name's Brazill</span>
         <br />
         <span>{"\u00A0"} ...yes, like the country.</span>
       </div>
@@ -20,7 +19,7 @@ function Title(props) {
 }
 
 const mapStateToProps = (state) => ({
-//   screenSize: state.screenSize,
+  // screenSize: state.screenSize,
 });
 
 export default connect(mapStateToProps)(Title);

@@ -14,11 +14,12 @@ function Zoom(props) {
             <div className="md-title">node-zoom-jwt</div>
           </Fade>
           <Fade bottom>
-            <div className="">
+            <div className="md-text-group">
               This package condenses 300+
               <a href="https://marketplace.zoom.us/docs/api-reference/zoom-api">
                 <span className="md-emphasis md-link">
-                   {" "}Zoom JSON Web Token{" "}
+                  {" "}
+                  Zoom JSON Web Token{" "}
                 </span>
               </a>{" "}
               functions into one place for easy usage
@@ -58,22 +59,26 @@ function Zoom(props) {
             <div className="md-heading">Usage</div>
           </Fade>
           <Fade bottom distance="25%">
-            Install the node-zoom-jwt package:
+            <span className="md-text-group">
+              Install the node-zoom-jwt package:
+            </span>
           </Fade>
           <Fade bottom distance="25%">
             <div className="md-cmd">npm i node-zoom-jwt</div>
           </Fade>
           <Fade bottom distance="25%">
-            Add node-zoom-jwt to your file:
+            <span className="md-text-group">
+              Add node-zoom-jwt to your file:
+            </span>
           </Fade>
           <Fade bottom distance="25%">
-            <div className="md-code">
-              const Zoom = require("node-zoom-jwt")
-            </div>
+            <div className="md-code">const Zoom = require("node-zoom-jwt")</div>
           </Fade>
 
           <Fade bottom distance="25%">
-            Use your APIKey & APISecret to connect to your app:
+            <span className="md-text-group">
+              Use your APIKey & APISecret to connect to your app:
+            </span>
           </Fade>
           <Fade bottom distance="25%">
             <div className="md-code">
@@ -82,7 +87,10 @@ function Zoom(props) {
           </Fade>
 
           <Fade bottom distance="25%">
-            Now you can access the functions provided by Zoom's API through the
+            <span className="md-text-group">
+              Now you can access the functions provided by Zoom's API through
+              the
+            </span>
             Zoom object:
           </Fade>
           <Fade bottom distance="25%">

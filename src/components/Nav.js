@@ -11,7 +11,7 @@ class Nav extends React.Component {
       navClass: "",
       navHeight: "",
       shouldShowHome: false,
-      navContainerClass:"nav-container"
+      navContainerClass:"nav-container",
     };
   }
 
