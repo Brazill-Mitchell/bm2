@@ -1,13 +1,10 @@
 
 /* Nav */
-.cont{
-    
-}
 .nav-item-container{
     position: relative;
     display: flex;
     width: 75vw;
-    margin: 25vh auto;
+    margin: 50vh auto;
     display: flex;
     justify-content: space-evenly;
     transition: .7s all ease-in-out;
