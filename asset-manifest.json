@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/bm2/static/css/main.ab18a5a0.chunk.css",
-    "main.js": "/bm2/static/js/main.dfe8c4e2.chunk.js",
-    "main.js.map": "/bm2/static/js/main.dfe8c4e2.chunk.js.map",
+    "main.css": "/bm2/static/css/main.d0c84101.chunk.css",
+    "main.js": "/bm2/static/js/main.56f1fbb6.chunk.js",
+    "main.js.map": "/bm2/static/js/main.56f1fbb6.chunk.js.map",
     "runtime-main.js": "/bm2/static/js/runtime-main.d61f9644.js",
     "runtime-main.js.map": "/bm2/static/js/runtime-main.d61f9644.js.map",
     "static/css/2.d470c34f.chunk.css": "/bm2/static/css/2.d470c34f.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.58c5634f.chunk.js.map": "/bm2/static/js/2.58c5634f.chunk.js.map",
     "index.html": "/bm2/index.html",
     "static/css/2.d470c34f.chunk.css.map": "/bm2/static/css/2.d470c34f.chunk.css.map",
-    "static/css/main.ab18a5a0.chunk.css.map": "/bm2/static/css/main.ab18a5a0.chunk.css.map",
+    "static/css/main.d0c84101.chunk.css.map": "/bm2/static/css/main.d0c84101.chunk.css.map",
     "static/js/2.58c5634f.chunk.js.LICENSE.txt": "/bm2/static/js/2.58c5634f.chunk.js.LICENSE.txt",
     "static/media/analysis.a6531f0d.jpg": "/bm2/static/media/analysis.a6531f0d.jpg",
     "static/media/atomistLanding.5ee371c7.jpg": "/bm2/static/media/atomistLanding.5ee371c7.jpg",
@@ -44,7 +44,7 @@
     "static/js/runtime-main.d61f9644.js",
     "static/css/2.d470c34f.chunk.css",
     "static/js/2.58c5634f.chunk.js",
-    "static/css/main.ab18a5a0.chunk.css",
-    "static/js/main.dfe8c4e2.chunk.js"
+    "static/css/main.d0c84101.chunk.css",
+    "static/js/main.56f1fbb6.chunk.js"
   ]
 }
