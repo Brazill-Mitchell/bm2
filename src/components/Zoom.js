@@ -90,7 +90,7 @@ const links = () => {
   return (
     <div style={{ display: "flex", flexDirection: "row" }}>
       {/* Github */}
-      <Fade top delay="200">
+      {/* <Fade top delay="200">
         <a
           className="project-link-style ml-1 button-elevation"
           href={"https://github.com/Brazill-Mitchell/node-zoom-jwt.git"}
@@ -101,7 +101,7 @@ const links = () => {
             <div className="github-image image-elevation my-auto ml-1 rounded-circle"></div>
           </div>
         </a>
-      </Fade>
+      </Fade> */}
 
       {/* Npm */}
       <Fade top delay="400">
