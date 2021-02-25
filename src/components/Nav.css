@@ -23,6 +23,7 @@
 }
 
 .nav-item{
+    font-size: 35px;
     position: relative;
     cursor: pointer;
     font-weight: 700;
@@ -69,16 +70,11 @@
 
 
   /* desktop */
-  @media screen and (min-width: 800px) {
-    .nav-item{
-        font-size: 30px;
-    }
-  }
 
   /* tablet */
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     .nav-item{
-        font-size: 25px;
+        /* font-size: 25px; */
         margin: 0 5px;
     }
     .nav-item:hover{
@@ -88,6 +84,19 @@
         width: 100%;
         left: 0;
         animation-name: none;
+    }
+  }
+
+    
+  @media screen and (min-width: 900px){
+    .nav-item{
+        font-size: 40px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .nav-item{
+        font-size: 35px;
     }
   }
 
@@ -105,6 +114,7 @@
   /* mobile */
   @media screen and (max-width: 600px) {
     .nav-item{
+        font-size: 25px;
         margin: 0 5px;
     }
   }

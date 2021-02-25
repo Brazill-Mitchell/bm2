@@ -8,7 +8,6 @@ function Title(props) {
     <div className="intro-area">
       <div className="intro-quote">
         <span>Hi, my name's Brazill</span>
-        <br />
         <span>{"\u00A0"} ...yes, like the country.</span>
       </div>
       {/* <Head/> */}
