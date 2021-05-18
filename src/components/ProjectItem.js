@@ -31,8 +31,12 @@ function ProjectItem(props) {
       <Fade right distance="25%">
         {/* <div className="project-container container d-flex p-2"> */}
 
-        {props.screenSize === screenSizes.COMPUTER || props.screenSize === screenSizes.XL ? (
-          <div className="project-container container d-flex p-2">
+        {props.screenSize === screenSizes.COMPUTER ||
+        props.screenSize === screenSizes.XL ? (
+          <div
+            className="project-container container d-flex p-2"
+            style={!props.isLast ? { marginBottom: "5%" } : {}}
+          >
             {/* Main Image */}
             <div className="project-main-image-container container my-auto">
               {/* image */}
@@ -178,7 +182,7 @@ function ProjectItem(props) {
                       {project.previewImages.map((image, index) => {
                         return (
                           <div
-                          key={index}
+                            key={index}
                             onClick={(e) => {
                               e.stopPropagation();
                               handleFocus(image);

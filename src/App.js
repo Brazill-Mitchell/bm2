@@ -81,7 +81,7 @@ function App(props) {
       {/* <IntroCarousel refList={refList} /> */}
       <Zoom refCode={refCode} />
       <Projects refList={refList} />
-      <About refAbout={refAbout} />
+      {/* <About refAbout={refAbout} /> */}
       {/* <Contact refList={refList}/> */}
       {/* <div id='loading-container' className="bg-success"> */}
       {/* <div id='loading-img'></div> */}

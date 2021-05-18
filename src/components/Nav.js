@@ -124,7 +124,7 @@ class Nav extends React.Component {
                   PROJECTS
                 </span>
               </Fade>
-              <Fade right distance="25%" delay="400">
+              {/* <Fade right distance="25%" delay="400">
                 <span
                   className="nav-item"
                   onClick={() => {
@@ -133,7 +133,7 @@ class Nav extends React.Component {
                 >
                   ABOUT
                 </span>
-              </Fade>
+              </Fade> */}
               {/* <span
                 className="nav-item"
                 onClick={() => {
